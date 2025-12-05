@@ -3,7 +3,7 @@ from utils import validar_mensaje
 
 #validacion de mensaje
 def test_mensaje_valido():
-    assert validar_mensaje("hhh") == True
+    assert validar_mensaje("hola") == True
 
 #validacion de mensaje vacio   
 def test_mensaje_vacio():

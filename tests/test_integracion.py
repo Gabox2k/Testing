@@ -17,10 +17,10 @@ def crear_cliente(nombre):
 def recibir_mensajes(cliente, recibidos):
     while True:
         try:
-            msg = cliente.recv(1024).decode()
-            if not msg:
+            mensage = cliente.recv(1024).decode()
+            if not mensage:
                 break
-            recibidos.append(msg)
+            recibidos.append(mensage)
         except:
             break
  
