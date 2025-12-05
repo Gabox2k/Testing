@@ -1,4 +1,4 @@
-
+#validar antes de enviar al servidor 
 def validar_mensaje(mensaje ):
 
     if mensaje is None:
