@@ -5,6 +5,7 @@ import time
 host = "localhost"
 port = 8000
 
+#Creacion del cliente 
 def crear_cliente(nombre):
     c = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     c.connect((host, port))
@@ -12,6 +13,7 @@ def crear_cliente(nombre):
     
     return c
 
+#Recibir mensaje
 def recibir_mensajes(cliente, recibidos):
     while True:
         try:
@@ -21,7 +23,8 @@ def recibir_mensajes(cliente, recibidos):
             recibidos.append(msg)
         except:
             break
-        
+ 
+#Conexion de clientes        
 def multiple_conexiones():
     c1 = crear_cliente("pedro")
     mensaje1= []
@@ -41,6 +44,7 @@ def multiple_conexiones():
     c1.close()
     c2.close()
     
+    #Desconexion 
     def test_desconexion():
         c1= crear_cliente("pedro")
         c2= crear_cliente("luis")
