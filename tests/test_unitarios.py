@@ -13,7 +13,7 @@ def test_mensaje_vacio():
 def test_mensaje_espacios():
     assert validar_mensaje(" ") == False
 
-#validacoin de solo espacios    
+#validacion de solo espacios    
 def test_mensaje_none():
     assert validar_mensaje(None) == False
     
